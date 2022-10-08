@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: #05364d;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bars ul,
+li {
+  display: inline-flex;
+  padding: 20px;
+}
+.nav-bars a {
+  color: #000;
+  text-decoration: none;
+}
+.nav-bars a:hover {
+  text-decoration: underline;
+  color: #efb6df;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 2s;
+}
+main {
+  color: #f5f5f5;
+}
+.content-first {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect1-a {
+  padding: 20px;
+  width: 550px;
+}
+.social-icons i {
+  padding-left: 15px;
+  color: var(--primary);
+}
+.fa {
+  padding: 10px 10px;
+}
+.fa-facebook:hover {
+  color: #3d3de4;
+}
+.fa-twitter-square:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
+.fa-skype:hover {
+  color: #1e90ff;
+  background-color: #fff;
+}
+.fa-instagram:hover {
+  color: #ee82ee;
+}
+.sect1-a-prof {
+  font-size: 23px;
+  color: var(--primary);
+}
+.sect1-a-prof-p,
+.welcome-logo {
+  font-size: 20px;
+  color: var(--primary);
+}
+.submit-btn {
+  text-decoration: none;
+  padding: 12px 32px;
+  border: 1px solid
+    linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  border-radius: 10px;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  color: #fff;
+}
+.submit-btn:hover {
+  background: linear-gradient(to left, #1345e6 60%, #ed239f 81%, #1345e6 20%);
+  transition: 1s;
+}
+
+.sect2-b img {
+  max-width: 400px;
+  padding-left: 50px;
+}
+.head-ers {
+  color: var(--primary);
+}
+.Perso-Proj {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.show-proj {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.proj {
+  width: 300px;
+  height: 350px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  box-shadow: rgb(15, 14, 14);
+  color: var(--primary);
+  overflow: hidden;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 80px;
+}
+.sec-about-a img {
+  max-width: 400px;
+  max-height: 350px;
+  padding-left: 30px;
+}
+.sec-about-b {
+  color: var(--primary);
+  font-size: 17px;
+  line-height: 43px;
+  width: 350px;
+}
+.testamonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  padding-top: 60px;
+  line-height: 35px;
+}
+.test-img img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50px;
+}
+.test-pro {
+  font-style: italic;
+  text-align: center;
+  width: 350px;
+  opacity: 1;
+}
+.contact {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+@media screen and (min-width: 355px) and (max-width: 760px) {
+  body {
+    font-size: 14px;
+  }
+  .content-first {
+    flex-direction: column-reverse;
+  }
+  header,
+  .Perso-Proj,
+  .about,
+  .show-proj {
+    padding: 20px;
+    font-size: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sect1-a {
+    padding-left: 25px;
+    width: 400px;
+  }
+
+  .projts img {
+    max-width: 60%;
+  }
+  input[type="text"] {
+    width: 40%;
+  }
+}
